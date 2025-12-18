@@ -1,0 +1,96 @@
+@import "../less/_mixins.less";
+@import "../less/_variables.less";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: @back-color;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 83.5%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-nowrap;
+
+    & a.menu__list-link {
+        .text;
+        color: @black-color;
+        text-decoration: none;
+        font-size: @size-16;
+
+        &:hover {
+            cursor: pointer;
+            color: @button-back;
+            .hover;
+        }
+    }
+}
+
+img {
+    .hover;
+}
+
+li:nth-child(2) {
+    padding: 0 71px 0 80px;
+}
+
+p {
+    .text;
+    color: @black-color;
+    font-weight: @normal;
+    font-size: @size-14;
+    line-height: @size-20;
+    letter-spacing: 0px;
+}
+
+.text {
+    &--black {
+        color: @black-color;
+    }
+
+    &--review {
+        .flex-column;
+        align-items: center;
+        gap: 29px;
+        text-align: center;
+    }
+
+    &--card-info {
+        .flex-column;
+        gap: 8px;
+    }
+
+    &--prop-container {
+        .flex-column;
+        gap: 24px;
+    }
+}
+
+.section-container {
+    .flex-column;
+    align-items: center;
+    gap: 43px;
+
+    & h4 {
+        color: @black-color;
+    }
+
+    & a {
+        color: @white-color;
+    }
+}
+
+.info-container {
+    .flex-column;
+    gap: 55px;
+    align-items: center;
+}

@@ -1,0 +1,302 @@
+@import "../less/_funcions.less";
+
+.point {
+    .responsive-property(width, 150, 60);
+    .responsive-property(height, 150, 60);
+    position: absolute;
+
+    &-one {
+        .responsive-property(top, 30, 30);
+        .responsive-property(left, 650, 150);
+
+        @media(max-width: 960px) {
+            .responsive-property(width, 60, 60);
+            .responsive-property(top, 30, 30);
+            .responsive-property(left, 750, 150);
+        }
+
+        @media(max-width: 760px) {
+            .responsive-property(top, 0, 0);
+            .responsive-property(height, 40, 40);
+            .responsive-property(left, 270, 100);
+        }
+
+        @media(max-width: 660px) {
+            .responsive-property(top, 20, 20);
+            .responsive-property(left, 200, 80);
+        }
+
+        @media(max-width: 480px) {
+            .responsive-property(top, 50, 50);
+            .responsive-property(left, 150, 60);
+        }
+    }
+
+    &-two {
+        .responsive-property(width, 60, 60);
+        .responsive-property(top, 170, 120);
+        .responsive-property(left, 1050, 350);
+
+        @media(max-width: 1080px) {
+            display: none;
+        }
+
+        @media(max-width: 960px) {
+            display: block;
+            .responsive-property(top, 30, 30);
+            .responsive-property(left, 650, 200);
+        }
+
+        @media(max-width: 760px) {
+            .responsive-property(top, 100, 100);
+            .responsive-property(left, 570, 180);
+        }
+
+        @media(max-width: 620px) {
+            .responsive-property(top, 100, 100);
+            .responsive-property(left, 450, 140);
+        }
+
+        @media(max-width: 480px) {
+            .responsive-property(top, 120, 120);
+            .responsive-property(left, 350, 110);
+        }
+    }
+
+    &-three {
+        .responsive-property(width, 100, 80);
+        .responsive-property(top, 380, 230);
+        .responsive-property(left, 600, 80);
+
+        @media (max-width: 960px) {
+            .responsive-property(top, 280, 200);
+            .responsive-property(left, 250, 70);
+            .responsive-property(height, 60, 50);
+        }
+
+        @media (max-width: 760px) {
+            .responsive-property(top, 260, 190);
+            .responsive-property(left, 200, 60);
+            .responsive-property(height, 70, 55);
+        }
+
+        @media (max-width: 620px) {
+            .responsive-property(top, 240, 180);
+            .responsive-property(left, 140, 50);
+        }
+
+        @media (max-width: 480px) {
+            .responsive-property(top, 230, 170);
+            .responsive-property(left, 80, 30);
+        }
+    }
+
+    &-four {
+        .responsive-property(width, 100, 80);
+        .responsive-property(height, 60, 50);
+        .responsive-property(top, 60, 40);
+        .responsive-property(left, 160, 70);
+
+        @media (max-width: 1024px) {
+            .responsive-property(top, 80, 60);
+            .responsive-property(left, 200, 90);
+        }
+
+        @media (max-width: 960px) {
+            .responsive-property(top, 100, 80);
+            .responsive-property(left, 250, 110);
+        }
+
+        @media (max-width: 760px) {
+            .responsive-property(top, 100, 80);
+            .responsive-property(left, 160, 70);
+            .responsive-property(height, 70, 55);
+        }
+
+        @media (max-width: 620px) {
+            .responsive-property(top, 40, 30);
+            .responsive-property(left, 120, 50);
+        }
+
+        @media (max-width: 535px) {
+            .responsive-property(top, 40, 30);
+            .responsive-property(left, 70, 30);
+        }
+    }
+
+    &-five {
+        .responsive-property(width, 100, 80);
+        .responsive-property(height, 60, 50);
+        .responsive-property(top, 50, 30);
+        .responsive-property(left, 500, 200);
+
+        @media(max-width: 1220px) {
+            .responsive-property(left, 450, 180);
+        }
+
+        @media(max-width: 1024px) {
+            display: none;
+        }
+
+        @media(max-width: 960px) {
+            display: block;
+            .responsive-property(top, 75, 50);
+            .responsive-property(left, 700, 250);
+        }
+
+        @media(max-width: 860px) {
+            .responsive-property(top, 90, 60);
+            .responsive-property(left, 630, 220);
+        }
+
+        @media(max-width: 760px) {
+            .responsive-property(top, 70, 45);
+            .responsive-property(left, 530, 190);
+        }
+
+        @media(max-width: 620px) {
+            .responsive-property(top, 30, 20);
+            .responsive-property(left, 460, 160);
+        }
+
+        @media(max-width: 530px) {
+            .responsive-property(top, 40, 25);
+            .responsive-property(left, 330, 120);
+        }
+
+        @media(max-width: 340px) {
+            .responsive-property(top, 30, 20);
+            .responsive-property(left, 170, 60);
+        }
+    }
+
+    &-six {
+        .responsive-property(width, 100, 80);
+        .responsive-property(height, 60, 50);
+        .responsive-property(top, 300, 180);
+        .responsive-property(left, 360, 120);
+
+        @media (max-width: 1024px) {
+            .responsive-property(top, 350, 200);
+            .responsive-property(left, 400, 140);
+        }
+
+        @media (max-width: 960px) {
+            .responsive-property(top, 400, 220);
+            .responsive-property(left, 550, 180);
+        }
+
+        @media (max-width: 860px) {
+            .responsive-property(top, 380, 210);
+            .responsive-property(left, 480, 160);
+        }
+
+        @media (max-width: 760px) {
+            .responsive-property(top, 320, 190);
+            .responsive-property(left, 400, 140);
+            .responsive-property(height, 70, 55);
+        }
+
+        @media (max-width: 620px) {
+            .responsive-property(top, 260, 160);
+            .responsive-property(left, 310, 110);
+        }
+
+        @media (max-width: 530px) {
+            .responsive-property(top, 220, 140);
+            .responsive-property(left, 240, 90);
+        }
+
+        @media (max-width: 440px) {
+            .responsive-property(top, 180, 120);
+            .responsive-property(left, 180, 70);
+        }
+
+        @media (max-width: 340px) {
+            .responsive-property(top, 100, 70);
+            .responsive-property(left, 160, 60);
+        }
+    }
+
+    &-seven {
+        .responsive-property(width, 150, 100);
+        .responsive-property(height, 60, 50);
+        .responsive-property(top, 50, 30);
+        .responsive-property(left, 740, 250);
+
+        @media(max-width: 1220px) {
+            .responsive-property(left, 650, 220);
+        }
+
+        @media(max-width: 960px) {
+            .responsive-property(top, 50, 30);
+            .responsive-property(left, 150, 50);
+        }
+
+        @media(max-width: 570px) {
+            .responsive-property(top, 20, 15);
+            .responsive-property(left, 40, 15);
+        }
+    }
+
+    &-eight {
+        .responsive-property(width, 120, 80);
+        .responsive-property(height, 60, 50);
+        .responsive-property(top, 60, 40);
+        .responsive-property(left, 180, 60);
+
+        @media(max-width: 960px) {
+            .responsive-property(top, 80, 55);
+            .responsive-property(left, 270, 90);
+        }
+
+        @media(max-width: 680px) {
+            .responsive-property(top, 40, 30);
+            .responsive-property(left, 160, 55);
+        }
+
+        @media(max-width: 500px) {
+            .responsive-property(top, 20, 15);
+            .responsive-property(left, 80, 30);
+        }
+    }
+
+    &-nine {
+        .responsive-property(width, 120, 80);
+        .responsive-property(height, 70, 55);
+        .responsive-property(top, 170, 120);
+        .responsive-property(left, 340, 120);
+
+        @media(max-width: 1210px) {
+            .responsive-property(left, 260, 90);
+        }
+
+        @media(max-width: 1070px) {
+            .responsive-property(left, 220, 80);
+        }
+
+        @media(max-width: 960px) {
+            .responsive-property(top, 220, 150);
+            .responsive-property(left, 500, 170);
+        }
+
+        @media(max-width: 800px) {
+            .responsive-property(top, 200, 140);
+            .responsive-property(left, 430, 150);
+        }
+
+        @media(max-width: 680px) {
+            .responsive-property(top, 120, 90);
+            .responsive-property(left, 310, 110);
+        }
+
+        @media(max-width: 500px) {
+            .responsive-property(top, 90, 70);
+            .responsive-property(left, 200, 70);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
